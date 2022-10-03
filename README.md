@@ -1,1 +1,5 @@
-# asl_project
+# Tisha Di Fresco
+
+### asl_project
+
+### This repository was created for my asl project this month. I will be learning how use HTTP headers, mvc patterns, and more.
