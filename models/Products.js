@@ -3,7 +3,6 @@ let products = [
     {id: "2", "slug": "tsbam-hat", "name": "TSBam Hat"},
     {id: "3", "slug": "tsbam-belt", "name": "TSBam Belt"},
     {id: "4", "slug": "tsbam-shoes", "name": "TSBam Shoes"}
-
 ]
 
 const all = () => {

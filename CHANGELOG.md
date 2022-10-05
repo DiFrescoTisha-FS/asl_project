@@ -26,3 +26,9 @@
 
 * This is my final entry
 
+2022-10-05
+
+* I finally finished my video demonstration of how I can use the curl commands perform various tasks by using DELETE, POST, or GET verbs and displaying the results in the browser.
+
+* This is my final entry for this activity
+
