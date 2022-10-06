@@ -32,3 +32,7 @@
 
 * This is my final entry for this activity
 
+2022-10-05
+
+* Beginning week 2 lessons and activities
+
