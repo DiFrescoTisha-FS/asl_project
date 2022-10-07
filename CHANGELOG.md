@@ -36,3 +36,5 @@
 
 * Beginning week 2 lessons and activities
 
+* Worked hard today trying to get my project to work right. Everything was working right except for the edit, which would bring back a blank id and name, and the create link did not show on page. I followed the same error instructor has in the video, but the solution did not work. Now I've crashed my server. Trying to find the issue.
+
