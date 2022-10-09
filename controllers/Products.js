@@ -37,7 +37,7 @@ const update = (req, res) => {
 
 const remove = (req, res) => {
     const products = Products.remove(req.params.id)
-    res.json(products)
+    // res.json(products)
 }
 
 module.exports = { index, form, show, create, update, remove }

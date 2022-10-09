@@ -1,5 +1,5 @@
 let products = [
-    {id: "1", "slug": "juice-wrld-shirt", "name": "Juice Wrld Shirt"},
+    {id: "1", "slug": "juice-wrld-shirt", "name": "Juice Wrld Shirt", "price":"$1.99"},
     {id: "2", "slug": "tsbam-hat", "name": "TSBam Hat"},
     {id: "3", "slug": "tsbam-belt", "name": "TSBam Belt"},
     {id: "4", "slug": "tsbam-shoes", "name": "TSBam Shoes"}

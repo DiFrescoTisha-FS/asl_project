@@ -38,3 +38,12 @@
 
 * Worked hard today trying to get my project to work right. Everything was working right except for the edit, which would bring back a blank id and name, and the create link did not show on page. I followed the same error instructor has in the video, but the solution did not work. Now I've crashed my server. Trying to find the issue.
 
+2022-10-07
+
+* Another day spent trying to figure out how to work with Twig. I know most of what I need to understand how to get my project to function properly lies in the views. I must learn how the controller, model, and partials tie in together to make the form partial work. With the help of my instructor, I was finally able to get the create link to show up and function. Now I just have to figure out the edit functionality and also the delete. 
+
+* 2022-10-08
+
+* Found a solution for the delete functionality, and added price to my products. However, now I'm getting "Error: Failed to lookup view "home" in views directory "/Users/tishadifresco/Projects/asl_project/templates"", and I'm not able to see my products page. 
+Will have to resolve it tomorrow.
+
