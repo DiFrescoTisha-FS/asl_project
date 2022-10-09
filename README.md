@@ -7,3 +7,5 @@
 ### Work for "Activity: Advanced Routing Using Express" is complete.
 
 ### Work for "Activity: RESTful API" is complete.
+
+### Work for "Activity: RESTful Template Structure" week 2 is complete.
