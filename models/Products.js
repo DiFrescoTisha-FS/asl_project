@@ -30,4 +30,4 @@ const remove = (id) => {
     return products
 }
 
-module.exports = { all, find, update, remove, create }
+module.exports = { all, find, create, update, remove }
