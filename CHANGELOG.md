@@ -49,5 +49,5 @@ Will have to resolve it tomorrow.
 
 2022-10-09
 
-* Today, there were a lot of ups and downs. One thing was a success, then something else would break or not function. But now, at the end of the day, I have reached my goal and the project works as it should! Success!!
+* Today, there were a lot of ups and downs. One thing was a success, then something else would break or not function. I never got the edit to work correctly when I thought it was but I am now out of time.
 
