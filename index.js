@@ -7,11 +7,7 @@ app.set('views', __dirname + '/templates')
 app.set('view engine', 'twig')
 
 app.get('/', (req, res) => {
-    res.render("home", { name: 'World', 'users': [
-        { name: 'Tisha Di Fresco', email: 'tbdifresco@student.fullsail.edu' },
-        { name: 'Dana Lou', email: 'dlou@student.fullsail.edu' },
-        { name: 'Jesse Pinkman', email: 'jpinkman@student.fullsail.edu' },
-    ] })
+    res.render("home")
 })
 
 app.use("/products", productRouter)
