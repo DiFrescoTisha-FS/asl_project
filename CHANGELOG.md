@@ -51,3 +51,9 @@ Will have to resolve it tomorrow.
 
 * Today, there were a lot of ups and downs. One thing was a success, then something else would break or not function. I never got the edit to work correctly when I thought it was but I am now out of time.
 
+2022-10-10
+
+* Installed Sequelize-cli and got it running my project along with Docker
+
+* Followed video demos to set everything up
+
