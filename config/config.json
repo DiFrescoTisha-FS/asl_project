@@ -4,20 +4,20 @@
     "password": "root",
     "database": "dev_asl",
     "host": "mariadb",
-    "dialect": "mysql"
+    "dialect": "mariadb"
   },
   "test": {
     "username": "root",
     "password": "root",
     "database": "dev_asl",
     "host": "mariadb",
-    "dialect": "mysql"
+    "dialect": "mariadb"
   },
   "production": {
     "username": "root",
     "password": "root",
     "database": "dev_asl",
     "host": "mariadb",
-    "dialect": "mysql"
+    "dialect": "mariadb"
   }
 }
