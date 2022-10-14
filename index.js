@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const twig = require('twig')
 const productRouter = require('./routers/Products')
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }))
 app.set('views', __dirname + '/templates')
 app.set('view engine', 'twig')
 
