@@ -1,0 +1,33 @@
+{% extends 'layouts/base.twig' %}
+
+{% block main_content %}
+    <h2>All Variants:</h2>
+    <ul>
+        <a href="/variants/{{ variant.id }}/new">Create New Variant</a> 
+        {% for variant in variants %}
+            <li>
+                {{ variant.name }} -
+                <a href="/variants/{{ variant.id }}">Edit</a>
+                <a href="/variants/{{ variant.id }}/delete">Delete</a>
+            </li>      
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+{# {% extends 'layouts/base.twig' %}
+
+{% block content %}
+    <h2>All Variants</h2>
+    <ul>
+        {variant in variants %}
+        <li>
+            {{ variant.name }} -
+            <a href="/variants/{{ variant.id }}">View</a>
+            <a href="/variants/{{ variant.id }}/edit">Edit</a>
+            <a href="/variants/{{ variant.id }}/delete">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="/variants/new">Create Variant</a>
+{% endblock %} #}

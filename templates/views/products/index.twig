@@ -1,5 +1,21 @@
 {% extends 'layouts/base.twig' %}
 
+{% block main_content %}
+    <h2>All Products:</h2>
+    <ul>
+        <a href="/products/{{ product.id }}/new">Create New Product</a> 
+        {% for product in products %}
+            <li>
+                {{ product.name }} -
+                <a href="/products/{{ product.id }}">Edit</a>
+                <a href="/products/{{ product.id }}/delete">Delete</a>
+            </li>      
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+{# {% extends 'layouts/base.twig' %}
+
 {% block content %}
     <h1>Coming from templates/views/index.twig</h1>
     <ul>
@@ -14,4 +30,4 @@
     </ul>
 
     <a href="/products/new">Create New Product</a>
-{% endblock %}
+{% endblock %} #}

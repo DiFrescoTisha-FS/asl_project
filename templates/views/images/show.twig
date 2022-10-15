@@ -1,0 +1,66 @@
+{% extends 'layouts/base.twig' %}
+
+{% block main_content %}
+<h2>About {{ image.name }}</h2>
+    <ul style='list-style: none;'>
+        <li>
+        <li>
+            <strong>Id: </strong> {{ image.id}}
+        </li>
+        <li>
+            <strong>Title: </strong> ${{ image.title }}
+        </li>
+        <li>
+            <strong>Slug:</strong> {{ image.slug }}
+        </li>
+        <li>
+            <strong>Description:</strong> {{ image.description }}
+        </li>
+        <li>
+            <strong>Price:</strong> {{ image.price }}
+        </li>
+        <li>
+            <strong>Inventory: </strong> {{ image.inventory }}
+        </li>
+        <li>
+            <strong>Image Id:</strong> {{ image.imageId }}
+        </li>
+    </ul>
+    <p>
+        <a href="/images/{{ image.id }}/edit">Edit</a> | <a href="/images/{{ image.id }}/delete">Delete</a>
+    </p>
+{% endblock %}
+
+{# {% extends 'layouts/base.twig' %}
+
+{% block content %}
+
+    <ul>
+        <li>
+        <li>
+            <strong>Id: </strong> {{ image.id}}
+        </li>
+        <li>
+            <strong>Title: </strong> ${{ image.title }}
+        </li>
+        <li>
+            <strong>Slug:</strong> {{ image.slug }}
+        </li>
+        <li>
+            <strong>Description:</strong> {{ image.description }}
+        </li>
+        <li>
+            <strong>Price:</strong> {{ image.price }}
+        </li>
+        <li>
+            <strong>Inventory: </strong> {{ image.inventory }}
+        </li>
+        <li>
+            <strong>Image Id:</strong> {{ image.imageId }}
+        </li>
+    </ul>
+    </ul>
+
+    <a href="/images/{{ image.id }}/edit">Edit</a>
+    <a href="/images/{{ image.id }}/delete">Delete</a>
+{% endblock %} #}

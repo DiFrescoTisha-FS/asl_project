@@ -1,0 +1,31 @@
+    <form method="POST" action="/images/{% if image.id %}{{ image.id }}{% endif %}">
+    {% if image.id %}
+        <input type="hidden" name="id" value="{{ image.id }}">
+    {% endif %}
+        <div>
+            <label for="name">Title:</label>
+            <input type="text" name="title" id="title" value="{{ image.name }}" /> 
+        </div>
+        <div>
+            <label>Slug:</label>
+            <br />  
+            <input type="text" name="slug" value="{{ image.slug }}" />
+        </div>
+        <div>
+            <label>Description:</label>
+            <br />  
+            <textarea name="description">{{ image.description }}</textarea>
+        </div>
+        <div>
+            <label for="price">Price:</label>
+            <input type="text" name="price" id="price" value="{{ image.price }}" /> 
+        </div>
+        <div>
+            <label>Inventory:</label>
+            <br />  
+            <input type="text" name="price" value="{{ image.inventory }}" />
+        </div>
+        <div>
+            <input type="submit" type="submit" /> 
+        </div>
+</form>

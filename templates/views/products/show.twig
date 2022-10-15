@@ -1,5 +1,25 @@
 {% extends 'layouts/base.twig' %}
 
+{% block main_content %}
+<h2>About {{ product.name }}</h2>
+    <ul style='list-style: none;'>
+        <li>
+            <label>Id: </label> {{ product.id }}
+        </li>
+        <li>
+            <label>Name: </label> {{ product.name }}
+        </li>
+        <li>
+            <label>Price: </label> {{ product.price }}
+        </li>
+    </ul>
+    <p>
+        <a href="/products/{{ product.id }}/edit">Edit</a> | <a href="/products/{{ product.id }}/delete">Delete</a>
+    </p>
+{% endblock %}
+
+{# {% extends 'layouts/base.twig' %}
+
 {% block content %}
     <h1>Coming from templates/views/show.twig</h1>
 
@@ -20,4 +40,4 @@
 
     <a href="/products/{{ product.id }}/edit">Edit</a>
     <a href="/products/{{ product.id }}/delete">Delete</a>
-{% endblock %}
+{% endblock %} #}

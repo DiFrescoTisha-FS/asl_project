@@ -1,4 +1,21 @@
-<form action="/products/{% if product %}{{ product.id }}{% endif %}" method="post">
+<form method="POST" action="/products/{% if product.id %}{{ product.id }}{% endif %}">
+    {% if procuct.id %}
+        <input type="hidden" name="id" value="{{ product.id }}">
+    {% endif %}
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" value="{{ product.name }}" /> 
+        </div>
+        <div>
+            <label for="price">Price:</label>
+            <input type="text" name="price" id="price" value="{{ product.price }}" /> 
+        </div>
+        <div>
+            <input type="submit" type="submit" /> 
+        </div>
+</form>
+
+{# <form action="/products/{% if product %}{{ product.id }}{% endif %}" method="post">
 
     {% if product %}
         <input type="hidden" name="id" value="{{ product.id }}" />
@@ -28,4 +45,4 @@
     <div>
         <button type="submit">Save Product</button>
     </div>
-</form>
+</form> #}
