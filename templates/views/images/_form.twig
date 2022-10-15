@@ -1,0 +1,31 @@
+<form action="/products/{% if product %}{{ product.id }}{% endif %}" method="post">
+
+    {% if product %}
+        <input type="hidden" name="id" value="{{ product.id }}" />
+    {% endif %}
+
+    <div>
+        <label>Title:</label>
+        <br />  
+        <input type="text" name="title" value="{{ product.title }}" />
+    </div>
+        <div>
+        <label>Slug:</label>
+        <br />  
+        <input type="text" name="slug" value="{{ product.slug }}" />
+    </div>
+    <div>
+        <label>Description:</label>
+        <br />  
+        <textarea name="description">{{ product.description }}</textarea>
+    </div>
+    <div>
+        <label>Price:</label>
+        <br />  
+        <input type="text" name="price" value="{{ product.price }}" />
+    </div>
+
+    <div>
+        <button type="submit">Save Product</button>
+    </div>
+</form>
