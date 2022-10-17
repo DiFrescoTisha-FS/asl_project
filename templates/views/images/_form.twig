@@ -1,31 +1,35 @@
-<form action="/products/{% if product %}{{ product.id }}{% endif %}" method="post">
+<form  method="POST" action="/images/{% if image.id %}{{ image.id }}{% endif %}">
 
-    {% if product %}
-        <input type="hidden" name="id" value="{{ product.id }}" />
+    {% if image.id %}
+        <input type="hidden" name="id" value="{{ image.id }}" />
     {% endif %}
-
     <div>
-        <label>Title:</label>
-        <br />  
-        <input type="text" name="title" value="{{ product.title }}" />
+        <label>Variant: </label>
+        <select name="variantId">
+            {% for variant in variants %}
+            <option value="{{ variant.id }}">{{ variant.title }}</option>
+            {% endfor %}    
+        </select>
+        {# <br />  
+        <input type="text" name="title" value="{{ image.title }}" />
     </div>
         <div>
         <label>Slug:</label>
         <br />  
-        <input type="text" name="slug" value="{{ product.slug }}" />
+        <input type="text" name="slug" value="{{ image.slug }}" />
     </div>
     <div>
         <label>Description:</label>
         <br />  
-        <textarea name="description">{{ product.description }}</textarea>
+        <textarea name="description">{{ image.description }}</textarea>
     </div>
     <div>
         <label>Price:</label>
         <br />  
-        <input type="text" name="price" value="{{ product.price }}" />
-    </div>
+        <input type="text" name="price" value="{{ image.price }}" />
+    </div> #}
 
     <div>
-        <button type="submit">Save Product</button>
+        <button type="submit">Save image</button>
     </div>
 </form>

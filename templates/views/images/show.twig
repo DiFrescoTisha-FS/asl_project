@@ -1,13 +1,16 @@
 {% extends 'layouts/base.twig' %}
 
-{% block content %}
-    <h1>Coming from templates/views/show.twig</h1>
+{% block main_content %}
+    <h2>About Image #{{ image.id }}</h2>
 
-    <ul>
+    <ul style="list-style: none;">
         <li>
-            <strong>Name:</strong> {{ product.name }}
+            <strong>Id: </strong> {{ image.id }}
         </li>
         <li>
+            <strong>Assigned Variant: </strong> {{ variant.title }}
+        </li>
+        {# <li>
             <strong>Price:</strong> ${{ product.price }}
         </li>
         <li>
@@ -15,9 +18,8 @@
         </li>
         <li>
             <strong>Description:</strong> {{ product.description }}
-        </li>
+        </li> #}
     </ul>
 
-    <a href="/products/{{ product.id }}/edit">Edit</a>
-    <a href="/products/{{ product.id }}/delete">Delete</a>
+    <a href="/images/{{ image.id }}/edit">Edit</a> | <a href="/images/{{ image.id }}/delete">Delete</a>
 {% endblock %}

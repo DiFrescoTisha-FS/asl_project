@@ -1,17 +1,17 @@
 {% extends 'layouts/base.twig' %}
 
 {% block content %}
-    <h1>Coming from templates/views/index.twig</h1>
+    <h2>All Images</h2>
     <ul>
-        {% for product in products %}
+        {% for image in images %}
         <li>
-            {{ product.name }} -
-            <a href="/products/{{ product.id }}">View</a>
-            <a href="/products/{{ product.id }}/edit">Edit</a>
-            <a href="/products/{{ product.id }}/delete">Delete</a>
+            {{ image.id }} -
+            <a href="/images/{{ image.id }}">View</a>
+            <a href="/images/{{ image.id }}/edit">Edit</a>
+            <a href="/images/{{ image.id }}/delete">Delete</a>
         </li>
         {% endfor %}
     </ul>
 
-    <a href="/products/new">Create New Product</a>
+    <a href="/images/new">Create New Image</a>
 {% endblock %}
