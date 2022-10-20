@@ -1,6 +1,5 @@
 'use strict';
 
-/** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
     /**
@@ -12,12 +11,7 @@ module.exports = {
     await queryInterface.changeColumn('Products', 'price', {
       type: Sequelize.FLOAT,
       defaultValue: 0.00,
-      allowNull: false 
-    })
-    await queryInterface.changeColumn('Products', 'description', {
-      type: Sequelize.TEXT('long'),
-      defaultValue: 0.00,
-      allowNull: false 
+      allowNull: false
     })
   },
 
@@ -28,16 +22,10 @@ module.exports = {
      * Example:
      * await queryInterface.dropTable('users');
      */
-     await queryInterface.changeColumn('Products', 'price', {
-      type: Sequelize.STRING,
+    await queryInterface.changeColumn('Products', 'price', {
+      type: Sequelize.INTEGER,
       defaultValue: 0,
-      allowNull: false 
-    })
-     await queryInterface.changeColumn('Products', 'description', {
-      type: Sequelize.STRING,
-      defaultValue: 0,
-      allowNull: false 
+      allowNull: false
     })
   }
-
 };

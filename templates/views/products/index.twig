@@ -1,17 +1,15 @@
 {% extends 'layouts/base.twig' %}
 
-{% block content %}
-    <h1>Coming from templates/views/index.twig</h1>
-    <ul>
-        {% for product in products %}
-        <li>
-            {{ product.name }} -
-            <a href="/products/{{ product.id }}">View</a>
-            <a href="/products/{{ product.id }}/edit">Edit</a>
-            <a href="/products/{{ product.id }}/delete">Delete</a>
-        </li>
-        {% endfor %}
-    </ul>
-
-    <a href="/products/new">Create New Product</a>
+{% block main_content %}
+	<h2>All Products:</h2>
+	<p>This is coming from view/products/index</p>
+	<ul>
+		{% for product in products %}
+			<li>
+				{{ product.title }} ${{ product.price }} - 
+				<a href="/products/{{ product.id }}/edit">Edit</a> | <a href="/products/{{ product.id }}/delete">Delete</a>
+			</li>
+		{% endfor %}
+	</ul>
+	<a href="/products/new">Create New CD</a>
 {% endblock %}

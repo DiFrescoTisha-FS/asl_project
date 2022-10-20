@@ -1,17 +1,17 @@
 {% extends 'layouts/base.twig' %}
 
 {% block main_content %}
-    <h2>All Variants</h2>
-    <ul>
-        {% for variant in variants %}
-        <li>
-            {{ variant.name }} -
-            <a href="/variants/{{ variant.id }}">View</a>
-            <a href="/variants/{{ variant.id }}/edit">Edit</a>
-            <a href="/variants/{{ variant.id }}/delete">Delete</a>
-        </li>
-        {% endfor %}
-    </ul>
-
-    <a href="/variants/new">Create Variant</a>
+	<h2>All Variants:</h2>
+	<p>template/views/variants/index.twig</p>
+	<ul>
+		{% for variants in variant %}
+			<li>
+				{{ variants.title }} ${{ variants.price }} - 
+				<a href="/variants/{{ variants.id }}/edit">Edit</a>
+				 | 
+				<a href="/variants/{{ variants.id }}/delete">Delete</a>
+			</li>
+		{% endfor %}
+	</ul>
+	<a href="/variants/new">Create Variant</a>
 {% endblock %}

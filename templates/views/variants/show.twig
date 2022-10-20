@@ -1,33 +1,30 @@
 {% extends 'layouts/base.twig' %}
 
 {% block main_content %}
-    <h2>About {{ variant.title }}</h2>
-
-    <ul>
-        <li>
-            <strong>Title: </strong> {{ variant.name }}
-        </li>
-        <li>
-            <strong>Slug: </strong> {{ variant.slug }}
-        </li>
-        <li>
-            <strong>Description: </strong> {{ variant.description }}
-        </li>
-        <li>
-            <strong>Price: </strong> ${{ variant.price }}
-        </li>
-        <div>
-        <label>Inventory: </label>
-        <br />  
-        <input type="text" name="inventory" value="{{ variant.price }}" />
-    </div>
-    <div>
-        <label>Variant Id: </label>
-        <br />  
-        <input type="text" name="variantId" value="{{ variant.price }}" />
-    </div>
-
-    </ul>
-
-    <a href="/variants/{{ variant.id }}/edit">Edit</a> | <a href="/variants/{{ variant.id }}/delete">Delete</a>
+	<h2>About {{ variants.title }}</h2>
+	<p>This is coming from view/variants/show</p>
+	<ul style="list-style: none;">
+		<li>
+			<label><strong>Id:</strong> </label> {{ variants.id }}
+		</li>
+		<li>
+			<label><strong>Title:</strong> </label> {{ variants.title }}
+		</li>
+		<li>
+			<label><strong>URL Slug:</strong> </label> {{ variants.slug }}
+		</li>
+		<li>
+			<label><strong>Price:</strong> </label> {{ variants.price }}
+		</li>
+		<li>
+			<label><strong>Inventory:</strong> </label> {{ variants.inventory }}
+		</li>
+		<li>
+			<label><strong>Description:</strong> </label>
+			<p style="max-width: 500px;"><em>{{ variants.description|raw }}</em></p>
+		</li>
+	</ul>
+	<p>
+		<a href="/variants/{{ variants.id }}/edit">Edit</a> | <a href="/variants/{{ variants.id }}/delete">Delete</a>
+	</p>
 {% endblock %}
