@@ -28,7 +28,11 @@
     "twig": "^1.15.4"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.12",
     "nodemon": "^2.0.20",
-    "sequelize-cli": "^6.5.1"
+    "postcss": "^8.4.18",
+    "postcss-loader": "^7.0.1",
+    "sequelize-cli": "^6.5.1",
+    "tailwindcss": "^3.2.1"
   }
 }

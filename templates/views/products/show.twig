@@ -2,7 +2,7 @@
 
 {% block main_content %}
 	<h2>About {{ product.title }}</h2>
-	<p>This is coming from view/products/show</p>
+	<p>This is coming from views/products/show</p>
 	<ul style="list-style: none;">
 		<li>
 			<label><strong>Id:</strong> </label> {{ product.id }}
@@ -14,7 +14,7 @@
 			<label><strong>URL Slug:</strong> </label> {{ product.slug }}
 		</li>
 		<li>
-			<label><strong>Price:</strong> </label> ${{ product.price }}
+			<label><strong>Price:</strong> </label> {{ product.price }}
 		</li>
 		<li>
 			<label><strong>Is Published:</strong> </label> {{ product.is_published }}
