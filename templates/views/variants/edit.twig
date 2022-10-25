@@ -2,6 +2,13 @@
 
 {% block main_content %}
 <p>templat/views/variant/edit</p>
+    {% include 'views/variants/_form.twig' with { 'variants': variants, 'products': products } %}
+{% endblock %}
+
+{% extends 'layouts/base.twig' %}
+
+{% block main_content %}
+<p>templat/views/variant/edit</p>
 {# {% include 'views/variants/_form.twig' with { 'variants': variants } %} #}
-	{% include 'views/variants/_form.twig' with { 'variants': variants, 'product': product } %}
+{% include 'views/variants/_form.twig' with { 'variants': variants, 'product': product } %}
 {% endblock %}

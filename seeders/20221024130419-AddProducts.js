@@ -21,8 +21,8 @@ module.exports = {
       },
       { 
         id: 2, 
-        title: 'TSBam CD Psychopath', 
-        slug: 'tsbam-cd-psychopath', 
+        title: 'TSBam Album', 
+        slug: 'tsbam-album', 
         price: 29.99, 
         is_published: true,
         description, createdAt, updatedAt

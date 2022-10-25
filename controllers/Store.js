@@ -18,7 +18,7 @@ const show = async (req, res) => {
 	})
 
 	// Variant defaults to first variant in product
-	let variant = product.Variant[0]
+	let variant = product.Variants[0]
 
 	// If ?v= is set in the URL then set the variant
 	if (req.query.v) {
