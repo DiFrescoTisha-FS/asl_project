@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TrapStar Bam Beats Music Stop - {% block title %}Home{% endblock %}</title>
     {% block stylesheets %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/public/app.css">
+
     {% endblock %}
 </head>
 <body>
 
     {% include '../partials/_header.twig' %}
     {% block main_content %}
-    <p class="font-bold">This content is coming from templates/layouts/base.twig/home</p>
+    <p>This content is coming from templates/layouts/base.twig/home</p>
     {% endblock %}
-
-    {% block scripts %}{% endblock %}
     {% include '../partials/_footer.twig' %}
-
-    {% block scripts %}
-    <script type="text/javascript" src="/public/app.js"></script>
-    {% endblock %}
 
 </body>
 </html>

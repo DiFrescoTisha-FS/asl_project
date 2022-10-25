@@ -20,12 +20,39 @@ file:
 ```yaml
 # config/packages/webpack_encore.yaml
 webpack_encore:
+.setOutputPath('public/build')
+.setPublicPath('/build')
 .enablePostCssLoader()
     # The path where Encore is building the assets - i.e. Encore.setOutputPath()
     # if you customize this, you will also need to change framework.assets.json_manifest_path (it usually lives in assets.yaml)
     output_path: '%kernel.project_dir%/public/build'
     # If multiple builds are defined (as shown below), you can disable the default build:
     # output_path: false
+    .addEntry('app', './assets/app.js')
+
+     .enableStimulusBridge('./assets/controllers.json')
+
+     .splitEntryChunks()
+
+      .enableSingleRuntimeChunk()
+
+    .cleanupOutputBeforeBuild()
+    .enableBuildNotifications()
+    .enableSourceMaps(!Encore.isProduction())
+
+    .enableVersioning(Encore.isProduction())
+
+        .configureBabel((config) => {
+        config.plugins.push('@babel/plugin-proposal-class-properties');
+    })
+
+        .configureBabelPresetEnv((config) => {
+        config.useBuiltIns = 'usage';
+        config.corejs = 3;
+    })
+
+    module.exports = Encore.getWebpackConfig();
+
 
     # Set attributes that will be rendered on all script and link tags
     script_attributes:
@@ -148,6 +175,7 @@ class SomeController
 {
     public function index(EntrypointLookupInterface $entrypointLookup)
     {
+         .addEntry('app', './assets/app.js')
         $entrypointLookup->reset();
         // render a template
 
@@ -198,6 +226,8 @@ class ScriptNonceSubscriber implements EventSubscriberInterface
         }
     }
 }
+
+
 ```
 
 ## Stimulus / Symfony UX Helper
@@ -346,3 +376,5 @@ You can also retrieve the generated attributes as an array, which can be helpful
 ```
 
 Ok, have fun!
+
+

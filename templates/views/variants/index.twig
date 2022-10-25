@@ -1,6 +1,26 @@
 {% extends 'layouts/base.twig' %}
 
 {% block main_content %}
+<h1>Coming from templates/views/variant/index.twig</h1>
+    <h2>All Variants</h2>
+    <ul>
+        {% for variant in variant %}
+        <li>
+        
+            {{ variant.title }} ${{ variant.price }} -
+            <a href="/variants/{{ variant.id }}/edit">Edit</a>
+            |
+            <a href="/variants/{{ variant.id }}/delete">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="/variants/new">Create Variant</a>
+{% endblock %}
+
+{# {% extends 'layouts/base.twig' %}
+
+{% block main_content %}
 	<h2>All Variants:</h2>
 	<p>template/views/variants/index.twig</p>
 	<ul>
@@ -14,4 +34,4 @@
 		{% endfor %}
 	</ul>
 	<a href="/variants/new">Create Variant</a>
-{% endblock %}
+{% endblock %} #}

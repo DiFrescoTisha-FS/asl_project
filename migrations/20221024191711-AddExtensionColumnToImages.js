@@ -25,3 +25,4 @@ module.exports = {
     queryInterface.removeColumn('Images', 'extension')
   }
 };
+

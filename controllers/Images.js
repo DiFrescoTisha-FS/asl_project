@@ -24,12 +24,12 @@ const show = async (req, res) => {
 }
 
 const create = async (req, res, next) => {
-	const images = await Images.create(req.body)
+	const image = await Images.create(req.body)
 	// Sets a pretext "imageId" for our upload middleware
-	req.imageId = images.id
+	req.imageId = image.id
 	// Invoke our upload middleware with next()
 	next()
-	res.redirect('/images/' + images.id)
+	res.redirect('/images/' + image.id)
 }
 
 const update = async (req, res, next) => {
@@ -44,7 +44,7 @@ const update = async (req, res, next) => {
 }
 
 const remove = async (req, res) => {
-	const images = await Images.destroy({ where: { id: req.params.id }})
+	const image = await Images.destroy({ where: { id: req.params.id }})
 	res.redirect('/images')
 }
 

@@ -2,7 +2,24 @@
     margin: 0;
     padding: 0;
     background: #fff;
-    color: #000;
+    color: #010606;
     text-align: center;
     font-size: 1rem;
 }
+
+h1 {
+    /* font-family: 'Poppins', sans-serif;  */
+    /* font-weight: 700; */
+    /* font-size: 10rem; */
+}
+
+nav {
+    height: 100px;
+    display: flex;
+}
+
+#tsbam {
+    font-family: 'Inspiration', cursive;
+    font-size: 40px;
+}
+

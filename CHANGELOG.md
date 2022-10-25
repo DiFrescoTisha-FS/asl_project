@@ -58,3 +58,7 @@ Will have to resolve it tomorrow.
 2022-10-18
 
 * It's getting harder to keep up with this changelog as I'm so focused on finishing my project on time. I really struggled with migratiions and models,and being honest, I even struggled with the database. Making so many errors and fixing them (many times with instructors help) was a great way for me to learn. I have all of the commands memorized and feel that I am better prepared to handle what comes next. I finally finished week 3 material and will be moving on to week 4.
+
+2022-10-24
+
+* It has been a struggle to complete this project. I had a major success today, I got my images to show!! But now my edit and create functioning is off. I hope to be done by tomorrow so I can submit it for a grade. I can't wait to see it completely working.

@@ -1,15 +1,28 @@
 <header>
-    <nav>
-        <ul>
-            <li>
-                <a href='/'>Home</a>
-            </li>
-            <li>
-                <a href='/'>About</a>
-            </li>
-            <li>
-                <a href='/'>Contact</a>
-            </li>
-        </ul>
+	<nav class="container flex-col">
+      <div class="flex">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="flex-col">
+          <button type="button" class="p-2" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+            <span class="bg-black"></span>
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+          </button>
+          
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="container bg-black rounded-lg" id="">
+          <ul class="flex bg-black rounded-lg text-center justify-evenly p-4">
+            {# <li><a class="m-8 text-purple-400 font-bold rounded-1xl hover:text-purple-300" href="/">tsbam</a></li> #}
+            <li><a id="tsbam" class="flex content-center bg-black text-purple-400" href="/">tsbam</a></li>
+            <li><a class="flex content-center bg-black border-2 border-purple-400 p-4 rounded-lg text-purple-400" href="/">View Shop</a></li>
+            <li><a class="flex content-center bg-black border-2 border-purple-400 p-4 rounded-lg text-purple-400" href="/products">Manage Products</a></li>
+            <li><a class="flex content-center bg-black border-2 border-purple-400 p-4 rounded-lg text-purple-400" href="/variants">Manage Variants</a></li>
+            <li><a class="flex content-center bg-black border-2 border-purple-400 p-4 rounded-lg text-purple-400" href="/images">Manage Images</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
 </header>

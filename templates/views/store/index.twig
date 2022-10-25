@@ -9,11 +9,11 @@
 
 {% block main_content %}
 	<main class="container">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 		<div class="container">
 		
-		    <h1>Trapstar Bam Beats Music Stop</h1>
+		    <h1  class="text-4xl mt-10 text-purple-400">Trapstar Bam Beats Music Stop</h1>
 		    <hr />
 		    <div id="products-container" class="row">
 		    	{% for product in products %}
@@ -28,11 +28,6 @@
 			                    		{% endfor %}		
 			                    	{% endfor %}
 			                    </a>
-			                    <ul class="social">
-			                        <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
-			                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-			                    </ul>
-			                    <span class="product-new-label">New</span>
 			                </div>
 			                <div class="product-content">
 			                    <h3 class="title"><a href="#">{{ product.title }}</a></h3>

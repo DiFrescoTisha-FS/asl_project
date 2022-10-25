@@ -6,14 +6,14 @@
 	<ul>
 		{% for image in images %}
 			<li>
-				<a href="/images/{{ images.id }}">{{ images.id }}.jpg</a> 
-				(Linked to variant 
-				<a href="/variants/{{ images.variantId }}">
-					{{ images.variants.title }} #{{ images.variantId }}
+				<a href="/images/{{ image.id }}">{{ image.id }}.jpg</a> 
+				(Linked to variants 
+				<a href="/variants/{{ image.variantId }}">
+					{{ image.variants.title }} #{{ image.variantId }}
 				</a>) - 
-				<a href="/images/{{ images.id }}">Edit</a>
+				<a href="/images/{{ image.id }}">Edit</a>
 				| 
-				<a href="/images/{{ images.id }}/delete">Delete</a>
+				<a href="/images/{{ image.id }}/delete">Delete</a>
 			</li>
 		{% endfor %}
 	</ul>

@@ -16,12 +16,12 @@ const uploadImage = async (req, res, next) => {
   // Check to see if there are any files to upload
   if (Object.keys(req.files).length > 0) {
     // Get the extension from the incoming file (ie: .png,.jpg,.gif)
-    const extension = path.extname(req.files.images.name)
+    const extension = path.extname(req.files.image.name)
     // Render the final file path based off the imageId and file extension
     uploadPath = util.format(uploadPath, req.imageId, extension)
     
     // Perform the move/mv operation that moves the file from a temp directory to our final path
-    return await req.files.images.mv(uploadPath)
+    return await req.files.image.mv(uploadPath)
       // Update the Image model with the new file extension uploaded
       .then(async () => await Images.update(
           { extension }, 
