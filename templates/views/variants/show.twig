@@ -1,0 +1,61 @@
+{% extends 'layouts/base.twig' %}
+
+{% block main_content %}
+	<h2>About {{ variants.title }}</h2>
+	<ul style="list-style: none;">
+		<li>
+			<label><strong>Id:</strong> </label> {{ variants.id }}
+		</li>
+		<li>
+			<label><strong>Title:</strong> </label> {{ variants.title }}
+		</li>
+		<li>
+			<label><strong>URL Slug:</strong> </label> {{ variants.slug }}
+		</li>
+		<li>
+			<label><strong>Price:</strong> </label> {{ variants.price }}
+		</li>
+		<li>
+			<label><strong>Available Inventory:</strong> </label> {{ variants.inventory }}
+		</li>
+		<li>
+			<label><strong>Description:</strong> </label>
+			<p style="max-width: 500px;"><em>{{ variants.description|raw }}</em></p>
+		</li>
+	</ul>
+	<p>
+		<a href="/variants/{{ variants.id }}/edit">Edit</a> | <a href="/variants/{{ variants.id }}/delete">Delete</a>
+	</p>
+{% endblock %}
+
+
+{# {% extends 'layouts/base.twig' %}
+
+{% block main_content %}
+	<h2>About {{ variants.title }}</h2>
+	<p>This is coming from view/variants/show</p>
+	<ul style="list-style: none;">
+		<li>
+			<label><strong>Id:</strong> </label> {{ variants.id }}
+		</li>
+		<li>
+			<label><strong>Title:</strong> </label> {{ variants.title }}
+		</li>
+		<li>
+			<label><strong>URL Slug:</strong> </label> {{ variants.slug }}
+		</li>
+		<li>
+			<label><strong>Price:</strong> </label> {{ variants.price }}
+		</li>
+		<li>
+			<label><strong>Inventory:</strong> </label> {{ variants.inventory }}
+		</li>
+		<li>
+			<label><strong>Description:</strong> </label>
+			<p style="max-width: 500px;"><em>{{ variants.description|raw }}</em></p>
+		</li>
+	</ul>
+	<p>
+		<a href="/variants/{{ variants.id }}/edit">Edit</a> | <a href="/variants/{{ variants.id }}/delete">Delete</a>
+	</p>
+{% endblock %} #}

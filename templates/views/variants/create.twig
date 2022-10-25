@@ -1,0 +1,6 @@
+{% extends 'layouts/base.twig' %}
+
+{% block main_content %}
+<p>This is coming from view/images/create</p>
+	{% include 'views/variants/_form.twig' with { 'products': products } %}
+{% endblock %}

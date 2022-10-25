@@ -9,3 +9,7 @@
 ### Work for "Activity: RESTful API" is complete.
 
 ### Work for "Activity: RESTful Template Structure" week 2 is complete.
+
+### Work for week 3 content complete.
+
+### Week for "assignments/e-commerce" week 4 complete.

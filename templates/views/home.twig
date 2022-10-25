@@ -1,28 +1,16 @@
-{% extends "layouts/base.twig" %}
+{% extends "../layouts/base.twig" %}
 
 {% block main_content %}
+	
+	<h1>Manage</h1>
+	<nav>
+		<ul>
+			<li><a href="/products">Products</a></li>
+			<li><a href="/variants">Variants</a></li>
+			<li><a href="/images">Images</a></li>
+		</ul>
+	</nav>
 
-    <ul>
-    {% for user in users %}
-        <li>
-            <label>name:</label> {{ user.name }}
-        </li>
-    {% endblock %}
-    </ul>
-
-
-
-
-{# {% extends "layouts/base.twig" %}
-{% block main_content %}
-<p>This content is coming from templates/layouts/base.twig</p>
 {% endblock %}
 
-{% block scripts %}
-<p>Scripts are loaded</p>
-<script>
-    alert('Hello World!')
-</script>
-{% endblock %}
-
-{% block title %}Home View{% endblock %} #}
+{% block title %}Home View{% endblock %}

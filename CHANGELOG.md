@@ -51,3 +51,18 @@ Will have to resolve it tomorrow.
 
 * Today, there were a lot of ups and downs. One thing was a success, then something else would break or not function. I never got the edit to work correctly when I thought it was but I am now out of time.
 
+2022-10-15
+
+* I haven't been keeping up with changelog since I have been working diligently to try to repair major issues from last week. I totally crashed my server, but today my instructor got everything fixed so that I'm good to go now. I will continue to work on the project until it is completed. Mr. Workman saved the day and gave me an extension! Now I must go and make the best of this given opportunity.
+
+2022-10-18
+
+* It's getting harder to keep up with this changelog as I'm so focused on finishing my project on time. I really struggled with migratiions and models,and being honest, I even struggled with the database. Making so many errors and fixing them (many times with instructors help) was a great way for me to learn. I have all of the commands memorized and feel that I am better prepared to handle what comes next. I finally finished week 3 material and will be moving on to week 4.
+
+2022-10-24
+
+* It has been a struggle to complete this project. I had a major success today, I got my images to show!! But now my edit and create functioning is off. I hope to be done by tomorrow so I can submit it for a grade. I can't wait to see it completely working.
+
+2022-10-25
+
+* This will be my last entry for this class. I submitted my e-commerce project, although there are major flaws in my work. I hope to have help from my instructor to fix the errors I have so I can use this store as part of my EPK. 

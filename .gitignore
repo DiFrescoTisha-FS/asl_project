@@ -23,6 +23,7 @@ data
 coverage
 *.lcov
 
+
 # nyc test coverage
 .nyc_output
 

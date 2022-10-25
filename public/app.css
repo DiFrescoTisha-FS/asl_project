@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #010606;
+    text-align: center;
+    font-size: 1rem;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+}
+
+#tsbam {
+    font-family: 'Inspiration', cursive;
+    font-size: 40px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+div#products-container {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.product-content {
+    z-index: -1;
+    padding: 15px;
+    margin-top: 2px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
