@@ -1,9 +1,10 @@
 <form method="POST" action="/images/{% if image.id %}{{ image.id }}{% endif %}">
+<div class="m-12">
     {% if image.id %}
         <input type="hidden" name="id" value="{{ image.id }}">
     {% endif %}
     <div>
-        <label>Product Lable</label>
+        <label>Product Label</label>
         <select name="variantId"  >
             <option>Select Variant...</option>
             {% for variant in variants %}
@@ -14,12 +15,13 @@
         </select>
     </div>
     <div>
-        <label for="image"> Upload Image:</label>
+        <label htmlFor="image"> Upload Image:</label>
         <br/>
         <input type="file" name="image" id="image" />
     </div>
     <div>
         <button type="submit">Save Product</button>
+    </div>
     </div>
 </form>
 

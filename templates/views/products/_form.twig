@@ -2,31 +2,34 @@
 	{% if product.id %}
 		<input type="hidden" name="id" value="{{ product.id }}">
 	{% endif %}
+	
 	<div>
 		<label>Title:</label>
-		<br />
-		<input type="text" name="title" id="title" value="{{ product.title }}" />
+		{# <br /> #}
+		<input class="border-2 border-gray-200 rounded-lg m-2" type="text" name="title" id="title" value="{{ product.title }}" />
 	</div>
 	<div>
-		<label>Slug:</label>
-		<br />
-		<input type="text" name="slug" id="slug" value="{{ product.slug }}" />
+		<label htmlFor="slug">Slug:</label>
+		{# <br /> #}
+		<input class="border-2 border-gray-200 rounded-lg m-2" type="text" name="slug" id="slug" value="{{ product.slug }}" />
 	</div>
 	<div>
-		<label>Price:</label>
-		<br />
-		<input type="text" name="price" id="price" value="{{ product.price }}" />
+		<label htmlFor="price">Price:</label>
+		{# <br /> #}
+		<input class="border-2 border-gray-200 rounded-lg m-2" type="text" name="price" id="price" value="{{ product.price }}" />
+	</div>
+	
+	<div>
+		<label htmlFor="is_published">Is Published?</label>
+		<input class="border-2 border-gray-200 rounded-lg m-2 mb-2" type="checkbox" name="is_published" id="is_published" value="true" {% if product.is_published %}checked="checked"{% endif %} />
+	</div>
+	<div class="flex flex-col">
+		<label htmlFor="description">Product Description:</label>
+		{# <br /> #}
+		<textarea class="border-2 border-gray-200 rounded-lg m-2 w-1/6" type="text" name="description" id="description">{{ product.description }}</textarea>
+		{# <textarea rows="10" cols="50" name="description" id="description">{{ product.description }}</textarea> #}
 	</div>
 	<div>
-		<label>Is Published?</label>
-		<input type="checkbox" name="is_published" id="is_published" value="true" {% if product.is_published %}checked="checked"{% endif %} />
-	</div>
-	<div>
-		<label>Product Description:</label><br />
-		{# <textarea type="text" name="description" id="description">{{ product.description }}</textarea> #}
-		<textarea rows="10" cols="50" name="description" id="description">{{ product.description }}</textarea>
-	</div>
-	<div>
-		<input type="submit" type="submit" />
+		<input class="bg-gray-300 p-2 rounded-lg" type="submit" type="submit" />
 	</div>
 </form>

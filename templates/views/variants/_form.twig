@@ -8,17 +8,17 @@
 		<input type="text" name="title" id="title" value="{{ variants.title }}" />
 	</div>
 	<div>
-		<label>Slug:</label>
+		<label htmlFor="slug">Slug:</label>
 		<br />
 		<input type="text" name="slug" id="slug" value="{{ variants.slug }}" />
 	</div>
 	<div>
-		<label>Price:</label>
+		<label htmlFor="price">Price:</label>
 		<br />
 		<input type="text" name="price" id="price" value="{{ variants.price }}" />
 	</div>
 	<div>
-		<label for="inventory">Available Inventory:</label>
+		<label htmlFor="inventory">Available Inventory:</label>
 		<br />
 		<input type="text" name="inventory" id="inventory" value="{{ variants.inventory }}" />
 	</div>
@@ -34,8 +34,9 @@
 		</select>
 	</div>
 	<div>
-		<label>Variant Description:</label><br />
-		<textarea rows="10" cols="50" name="description" id="description">{{ variants.description }}</textarea>
+		<label htmlFor="description">Variant Description:</label><br />
+				<textarea name="description" id="description">{{ variants.description }}</textarea>
+		{# <textarea rows="10" cols="50" name="description" id="description">{{ variants.description }}</textarea> #}
 	</div>
 	<div>
 		<input type="submit" type="submit" />

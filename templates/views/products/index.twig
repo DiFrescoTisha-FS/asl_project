@@ -1,6 +1,7 @@
 {% extends 'layouts/base.twig' %}
 
 {% block main_content %}
+<div class="m-12">
 	<h2>All Products:</h2>
 	<p>This is coming from view/products/index</p>
 	<ul>
@@ -12,4 +13,5 @@
 		{% endfor %}
 	</ul>
 	<a href="/products/new">Create New CD</a>
+</div>
 {% endblock %}

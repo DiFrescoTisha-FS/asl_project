@@ -1,6 +1,8 @@
 {% extends 'layouts/base.twig' %}
 
 {% block main_content %}
+<div class="m-12">
 <p>This is coming from view/products/create</p>
 	{% include 'views/products/_form.twig' with { 'product': product } %}
+</div>
 {% endblock %}
