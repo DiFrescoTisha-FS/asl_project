@@ -134,6 +134,7 @@ panel
 }
 
 .quantity {
+    font-weight: bold;
     width: 120px;
 }
 
