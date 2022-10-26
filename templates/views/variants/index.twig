@@ -21,17 +21,17 @@
 {% extends 'layouts/base.twig' %}
 
 {% block main_content %}
-	<h2>All Variants:</h2>
-	<p>template/views/variants/index.twig</p>
-	<ul>
+<div class="m-12">
+	<h2 class="mb-2 font-bold">All Variants:</h2>
+	<p class="mb-2">template/views/variants/index.twig</p>
+	<ul class="mb-2">
 		{% for variants in variant %}
-			<li>
+			<li class="text-bold mb-2">
 				{{ variants.title }} ${{ variants.price }} - 
-				<a href="/variants/{{ variants.id }}/edit">Edit</a>
-				 | 
-				<a href="/variants/{{ variants.id }}/delete">Delete</a>
+				<a class="font-bold" href="/variants/{{ variants.id }}/edit">Edit</a> | <a class="font-bold" href="/variants/{{ variants.id }}/delete">Delete</a>
 			</li>
 		{% endfor %}
 	</ul>
-	<a href="/variants/new">Create Variant</a>
+	<a class="font-bold mb-2 underline mt-2" href="/variants/new">Create Variant</a>
+</div>
 {% endblock %}

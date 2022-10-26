@@ -1,7 +1,8 @@
 {% extends 'layouts/base.twig' %}
 
 {% block main_content %}
-    <h2>About Image #{{ image.id }}</h2>
+<div class="m-12">
+    <h2><Strong>About Image #{{ image.id }}</strong</h2>
     <p>This is coming from view/images/show</p>
 
     <ul style="list-style: none;">
@@ -23,4 +24,5 @@
     </ul>
 
     <a href="/images/{{ image.id }}/edit">Edit</a> | <a href="/images/{{ image.id }}/delete">Delete</a>
+</div>
 {% endblock %}

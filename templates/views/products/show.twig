@@ -1,6 +1,7 @@
 {% extends 'layouts/base.twig' %}
 
 {% block main_content %}
+<div class="m-12">
 	<h2>About {{ product.title }}</h2>
 	<p>This is coming from views/products/show</p>
 	<ul style="list-style: none;">
@@ -27,4 +28,5 @@
 	<p>
 		<a href="/products/{{ product.id }}/edit">Edit</a> | <a href="/products/{{ product.id }}/delete">Delete</a>
 	</p>
+</div>
 {% endblock %}
