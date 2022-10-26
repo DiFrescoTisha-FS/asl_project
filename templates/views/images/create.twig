@@ -1,6 +1,8 @@
 {% extends 'layouts/base.twig' %}
 
 {% block main_content %}
+<div class="m-12">
 <p>This is coming from view/images/create</p>
 	{% include 'views/images/_form.twig', with { 'variants': variants } %}
+</div>
 {% endblock %}

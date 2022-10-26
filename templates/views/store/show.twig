@@ -3,14 +3,15 @@
 {% block stylesheets %}
 	{{ parent() }}
 	<link rel="stylesheet" type="text/css" href="/public/product-page.css">
+	<link rel="stylesheet" type="text/css" href="/public/product-page.css">
 {% endblock %}
 
 {% block title %}{{ product.title }} - {{ variants.title }}{% endblock %}
 
 {% block main_content %}
 	<main class="container">
-		<div class="container bootdey">
-			<div class="col-md-12">
+		<div class="grid grid-cols-2 gap-x-2 gap-y-2 grid-flow-row-dense">
+			<div class="bg-gray-200 rounded-lg shado-xl min-h-[300px]">
 				<section class="panel">
 					<div class="panel-body">
 						<div class="col-md-6">
@@ -26,16 +27,16 @@
 								{% endfor %}
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="m-12 col-md-6">
 							<h4 class="pro-d-title">
-								<a href="#" class="">
+								<a class="font-bold" href="#" class="">
 									{{ product.title }} - {{ variants.title }}
 								</a>
 							</h4>
 							<p>
 								{{ variants.description|raw }}
 							</p>
-							<h4>Options:</h4>
+							<h4 class="font-bold">Options:</h4>
 							<p>
 								{% for option in product.Variants %}
 									{% if option.id == variants.id %}
@@ -47,7 +48,7 @@
 							</p>
 							<div class="m-bot15">
 								<strong>Price : </strong>
-								<span class="pro-price">${{ variants.price }}</span>
+								<span class="">${{ variants.price }}</span>
 							</div>
 							<div class="m-bot15">
 								<strong>In Stock : </strong>
@@ -62,11 +63,11 @@
 								</span>
 							</div>
 							<div class="form-group">
-								<label>Quantity</label>
+								<label class="font-bold">Quantity</label>
 								<input type="quantiy" placeholder="1" class="form-control quantity">
 							</div>
 							<p>
-								<button class="btn btn-round btn-danger" type="button">
+								<button class="mt-2 p-2 bg-black text-purple-400 border-2 border-purple-400 rounded-sm" type="button">
 									<i class="fa fa-shopping-cart"></i> Add to Cart
 								</button>
 							</p>
